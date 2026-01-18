@@ -1,16 +1,16 @@
 export default {
-  // Brand
+
   brand: "DRAM",
   DRAM: "DRAM",
   
-  // Navigation
+
   Home: "Home",
   Work: "Work",
   ShowCase: "Showcase",
   Crew: "Crew",
   Connect: "Connect",
   
-  // Hero Section
+
   "Premium Quality Software": "Premium Quality Software",
   "Apps Crash": "Apps Crash",
   "Systems Fail": "Systems Fail",
@@ -22,7 +22,7 @@ export default {
   "View Our Work": "View Our Work",
   "Building the Future": "Building the Future",
   
-  // Features
+
   "100% Secure": "100% Secure",
   "Guaranteed": "Guaranteed",
   "Fast": "Fast",

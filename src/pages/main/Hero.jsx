@@ -229,7 +229,6 @@ const Hero = memo(function Hero() {
                     >
                         <div className="relative group w-full max-w-md lg:max-w-none">
 
-                            {/* Glow Effect */}
                             <div className="absolute -inset-4 sm:-inset-6 bg-gradient-to-r from-blue-600/40 via-purple-600/50 to-pink-600/40 rounded-3xl opacity-60 blur-3xl group-hover:opacity-80 transition-opacity duration-500" />
 
 
