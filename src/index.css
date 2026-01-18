@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+      font-family: 'Tajawal', 'Karla', sans-serif !important;
+    }
+  }
+.text-stroke {
+  color: transparent;
+   -webkit-text-stroke: 1px #D1006B;
+   text-stroke: 1px #D1006B;
+ }
+ .noise {
+   background-image: url("https://grainy-gradients.vercel.app/noise.png");
+   mix-blend-mode: overlay;
+   opacity: 0.1;
+ }
