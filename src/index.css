@@ -2,18 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap');
+
 @layer base {
-    html {
-      font-family: 'Tajawal', 'Karla', sans-serif !important;
-    }
+  html {
+    font-family: 'Cairo', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
   }
+
+  html[dir="rtl"] {
+    font-family: 'Cairo', sans-serif !important;
+    font-size: 90%;
+  }
+
+  html[dir="rtl"] * {
+    letter-spacing: 0.01em;
+  }
+}
+
 .text-stroke {
   color: transparent;
-   -webkit-text-stroke: 1px #D1006B;
-   text-stroke: 1px #D1006B;
- }
- .noise {
-   background-image: url("https://grainy-gradients.vercel.app/noise.png");
-   mix-blend-mode: overlay;
-   opacity: 0.1;
- }
+  -webkit-text-stroke: 1px #D1006B;
+  text-stroke: 1px #D1006B;
+}
+
+.noise {
+  background-image: url("https://grainy-gradients.vercel.app/noise.png");
+  mix-blend-mode: overlay;
+  opacity: 0.1;
+}

@@ -1,5 +1,4 @@
-import Footer from "../../components/Footer";
-import Hero from "./Hero";
+ import Hero from "./Hero";
 import Dock from "../../components/Dock";
 import { useNavigate } from "react-router-dom";
 
@@ -12,8 +11,7 @@ const Home = () => {
                 <Dock onNavigate={navigate} />
                 <Hero />
             </div>
-            <Footer />
-
+ 
 
         </>
     );

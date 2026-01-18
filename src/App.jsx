@@ -1,11 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
- import Home from "./pages/main/Home";
+import { useTranslation } from "react-i18next";
+import Home from "./pages/main/Home";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(
     localStorage.getItem("isDarkMode") === "true"
   );
+
+  const { i18n } = useTranslation();
+
+  useEffect(() => {
+    document.documentElement.dir = i18n.language === 'ar' ? 'rtl' : 'ltr';
+    document.documentElement.lang = i18n.language;
+  }, [i18n.language]);
 
   const toggleDarkMode = () => {
     setIsDarkMode((prevMode) => !prevMode);
@@ -19,7 +27,7 @@ function App() {
           path="/"
           element={<Home toggleDarkMode={toggleDarkMode} />}
         />
-    
+
       </Routes>
     </div>
   );
