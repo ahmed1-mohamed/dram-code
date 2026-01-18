@@ -59,8 +59,6 @@ const Hero = memo(function Hero() {
                     }}
                     className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 md:w-96 md:h-96 bg-blue-500/20 rounded-full blur-3xl"
                 />
-
-
                 {[...Array(6)].map((_, i) => (
                     <motion.div
                         key={i}
@@ -91,20 +89,14 @@ const Hero = memo(function Hero() {
                     </motion.div>
                 ))}
 
-
                 <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.02)_1px,transparent_1px)] bg-[size:50px_50px] md:bg-[size:100px_100px]" />
             </div>
-
-
             <motion.div
                 style={{ y, opacity }}
                 className="relative z-10 container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 pb-12 sm:pt-28 sm:pb-16 md:pt-32 md:pb-20"
             >
                 <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
-
                     <div className="flex flex-col justify-center space-y-4 sm:space-y-6 md:space-y-8">
-
-
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -116,8 +108,6 @@ const Hero = memo(function Hero() {
                                 {t("Premium Quality Software")}
                             </span>
                         </motion.div>
-
-
                         <div className="space-y-2 sm:space-y-3 md:space-y-4">
                             {[t("Apps Crash"), t("Systems Fail"), t("But We Eliminate Errors")].map((line, idx) => (
                                 <motion.h1
@@ -146,8 +136,6 @@ const Hero = memo(function Hero() {
                                 </motion.h1>
                             ))}
                         </div>
-
-
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -160,8 +148,6 @@ const Hero = memo(function Hero() {
                             </span>{" "}
                             {t("to failure. Built, tested, and trusted for your business.")}
                         </motion.p>
-
-
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -191,8 +177,6 @@ const Hero = memo(function Hero() {
                                 </span>
                             </motion.button>
                         </motion.div>
-
-
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -219,8 +203,6 @@ const Hero = memo(function Hero() {
                             ))}
                         </motion.div>
                     </div>
-
-
                     <motion.div
                         initial={{ opacity: 0, scale: 0.8, rotateY: 20 }}
                         animate={{ opacity: 1, scale: 1, rotateY: 0 }}
@@ -228,10 +210,7 @@ const Hero = memo(function Hero() {
                         className="flex justify-center lg:justify-end mt-8 lg:mt-0"
                     >
                         <div className="relative group w-full max-w-md lg:max-w-none">
-
                             <div className="absolute -inset-4 sm:-inset-6 bg-gradient-to-r from-blue-600/40 via-purple-600/50 to-pink-600/40 rounded-3xl opacity-60 blur-3xl group-hover:opacity-80 transition-opacity duration-500" />
-
-
                             <motion.div
                                 whileHover={{
                                     scale: 1.02,
@@ -247,11 +226,7 @@ const Hero = memo(function Hero() {
                                         alt="Hero Showcase"
                                         className="w-full h-56 sm:h-72 md:h-80 lg:h-96 xl:h-[500px] object-cover"
                                     />
-
-
                                     <div className="absolute inset-0 bg-gradient-to-t from-purple-900/50 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-300" />
-
-
                                     <motion.div
                                         initial={{ opacity: 0, y: 20 }}
                                         animate={{ opacity: 1, y: 0 }}
@@ -267,8 +242,6 @@ const Hero = memo(function Hero() {
                                     </motion.div>
                                 </div>
                             </motion.div>
-
-
                             <motion.div
                                 animate={{
                                     rotate: [0, 360],
@@ -298,8 +271,6 @@ const Hero = memo(function Hero() {
 
                 </div>
             </motion.div>
-
-
             <motion.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -318,7 +289,6 @@ const Hero = memo(function Hero() {
                     />
                 </motion.div>
             </motion.div>
-
         </section>
     );
 });
